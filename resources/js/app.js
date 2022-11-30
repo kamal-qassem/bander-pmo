@@ -7,6 +7,11 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+require('./bootstrap');
+  
+var moment = require('moment');
+  
+console.log(moment().format());
 
 /**
  * The following block of code may be used to automatically register your

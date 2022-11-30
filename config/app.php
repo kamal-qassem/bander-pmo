@@ -85,11 +85,11 @@ return [
      | Here you may specify the default date format for your application, which
      | will be used with date and date-time functions.
      |
-     */
+     */ 
 
     'date_format' => 'mm-dd-yyyy',
     'date_format_js' => 'mm-dd-yyyy',
-    'date_format_moment' => 'MM-DD-YYYY',
+    'date_format_moment' => 'M-D-Y',
     'time_format_moment' => 'HH:mm:ss',
     'datetime_format_moment' => 'MM-DD-YYYY HH:mm:ss',
 

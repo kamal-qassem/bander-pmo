@@ -29,13 +29,11 @@
     <script src="{{ url('adminlte/plugins/datetimepicker/bootstrap-datetimepicker.min.js') }}"></script>
     <script>
         $(function(){
-            moment.updateLocale('{{ App::getLocale() }}', {
-                week: { dow: 1 } // Monday is the first day of the week
-            });
+             moment.locale('en'); // 'en'
             
             $('.date').datetimepicker({
-                format: "{{ config('app.date_format_moment') }}",
-                locale: "{{ App::getLocale() }}",
+                format: "m/d/y",
+                locale: "en",
             });
             
         });
