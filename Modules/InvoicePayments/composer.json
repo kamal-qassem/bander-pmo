@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/invoicepayments",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\InvoicePayments\\Providers\\InvoicePaymentsServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\InvoicePayments\\": ""
+        }
+    }
+}

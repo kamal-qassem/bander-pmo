@@ -1,0 +1,16 @@
+{
+    "name": "ModulesManagement",
+    "alias": "modulesmanagement",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\ModulesManagement\\Providers\\ModulesManagementServiceProvider"
+    ],
+    "aliases": [],
+    "files": [],
+    "requires": [],
+    "settings_data": [],
+    "permissions": []
+}

@@ -1,0 +1,20 @@
+<?php
+
+return array (
+  'Verify Your Email Address' => 'अपने ईमेल पते की पुष्टि करें',
+  'A fresh verification link has been sent to your email address' => 
+  array (
+    '' => 'आपके ईमेल पते पर एक ताजा सत्यापन लिंक भेजा गया है।',
+  ),
+  'Before proceeding, please check your email for a verification link' => 
+  array (
+    '' => 'आगे बढ़ने से पहले, कृपया सत्यापन लिंक के लिए अपना ईमेल देखें।',
+  ),
+  'If you did not receive the email' => 'यदि आपको ईमेल प्राप्त नहीं हुआ है',
+  'click here to request another' => 'दूसरा अनुरोध करने के लिए यहां क्लिक करें',
+  'Register' => 'रजिस्टर',
+  'Name' => 'नाम',
+  'E-Mail Address' => 'ईमेल पता',
+  'Password' => 'पारण शब्द',
+  'Confirm Password' => 'पासवर्ड की पुष्टि कीजिये',
+);

@@ -1,0 +1,30 @@
+tr td span {
+  display:none;
+}
+tr:hover td span {
+  display:inline;
+}
+.m-side{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.m-side-1{
+  padding-bottom: 50px;
+}
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 1px 6px !important;
+  font-size: 12px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+}

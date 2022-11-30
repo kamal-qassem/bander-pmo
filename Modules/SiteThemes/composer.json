@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/sitethemes",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\SiteThemes\\Providers\\SiteThemesServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\SiteThemes\\": ""
+        }
+    }
+}

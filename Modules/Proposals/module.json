@@ -1,0 +1,14 @@
+{
+    "name": "Proposals",
+    "alias": "proposals",
+    "description": "",
+    "keywords": [],
+    "active": 0,
+    "order": 0,
+    "providers": [
+        "Modules\\Proposals\\Providers\\ProposalsServiceProvider"
+    ],
+    "aliases": [],
+    "files": [],
+    "requires": []
+}

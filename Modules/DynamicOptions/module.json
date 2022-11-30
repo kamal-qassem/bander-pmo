@@ -1,0 +1,14 @@
+{
+    "name": "DynamicOptions",
+    "alias": "dynamicoptions",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\DynamicOptions\\Providers\\DynamicOptionsServiceProvider"
+    ],
+    "aliases": [],
+    "files": [],
+    "requires": []
+}

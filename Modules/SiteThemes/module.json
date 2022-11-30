@@ -1,0 +1,14 @@
+{
+    "name": "SiteThemes",
+    "alias": "sitethemes",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\SiteThemes\\Providers\\SiteThemesServiceProvider"
+    ],
+    "aliases": [],
+    "files": [],
+    "requires": []
+}

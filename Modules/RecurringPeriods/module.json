@@ -1,0 +1,14 @@
+{
+    "name": "RecurringPeriods",
+    "alias": "recurringperiods",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\RecurringPeriods\\Providers\\RecurringPeriodsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

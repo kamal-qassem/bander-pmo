@@ -1,0 +1,16 @@
+.table{
+	margin-right: 1000px;
+	margin-left: 20px;
+	border: 1px solid lightgray;
+	width: 80%;
+}
+
+thead th{
+	background-color:  #6289ca;
+	color: white;
+	border: 1px solid #fff;
+	width: 30%;
+	height: 35px;
+	font-size: 15px;
+	font-weight: 600;
+}

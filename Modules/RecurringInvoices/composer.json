@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/recurringinvoices",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\RecurringInvoices\\Providers\\RecurringInvoicesServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\RecurringInvoices\\": ""
+        }
+    }
+}

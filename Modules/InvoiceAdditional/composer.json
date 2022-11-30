@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/invoiceadditional",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\InvoiceAdditional\\Providers\\InvoiceAdditionalServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\InvoiceAdditional\\": ""
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Templates",
+    "alias": "templates",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Templates\\Providers\\TemplatesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

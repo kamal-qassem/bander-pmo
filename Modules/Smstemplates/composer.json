@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/smstemplates",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Smstemplates\\Providers\\SmstemplatesServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Smstemplates\\": ""
+        }
+    }
+}

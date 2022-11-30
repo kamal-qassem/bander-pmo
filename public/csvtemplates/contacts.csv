@@ -1,0 +1,4 @@
+first_name,last_name,phone1_code,phone1,phone2_code,phone2,email,skype,address,city,state_region,zip_postal_code
+John,Doe,98,9632587415,,,john@john.com,,,,,
+Sam,Leu,45,2145698736,,,sam@sam.com,,,,,
+Robert,,,,,,robert@robert.com,,,,,

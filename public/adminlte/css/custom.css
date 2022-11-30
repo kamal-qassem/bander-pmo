@@ -1,0 +1,30 @@
+
+.label {
+	margin-right:5px;
+	margin-bottom:5px !important;
+	display:inline-block;
+	padding-right: 10px !important;
+} 
+#wrapper {
+    position: relative;
+}
+
+button.dt-button, div.dt-button, a.dt-button {
+    padding: 0.2em 1em !important;
+}
+.select2-results__option[aria-selected] {
+    cursor: pointer;
+    padding-left: 10px !important;
+}
+
+.page-title {
+	color: red !important;
+}
+
+.label-many{
+    margin-right: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+

@@ -1,0 +1,14 @@
+{
+    "name": "InvoiceAdditional",
+    "alias": "invoiceadditional",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\InvoiceAdditional\\Providers\\InvoiceAdditionalServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

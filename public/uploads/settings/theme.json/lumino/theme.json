@@ -1,0 +1,28 @@
+{
+  "name": "lumino",
+  "title": "Lumino",
+  "description": "Digi Theme",
+  "author": "Digisamaritan",
+  "version": "1.0.0",
+  "parent": "",
+  "settings_data": {
+    "site-title": {
+      "value": "Digi Accounting, Invoicing & Billing",
+      "type": "text",
+      "extra": "",
+      "tool_tip": "Site Title"
+    },
+    "site-logo": {
+      "value": "qkiMz5zqCUyQ9hM.jpg",
+      "type": "file",
+      "extra": "",
+      "tool_tip": "Site Logo"
+    },
+    "site-mini-name": {
+      "type": "text",
+      "value": "DA",
+      "extra": "",
+      "tool_tip": "Site Mini Name"
+    }
+  }
+}
