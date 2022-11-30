@@ -29,8 +29,8 @@ class StoreTasksRequest extends FormRequest
             'name' => 'required',
             'status_id' => 'required',
             'tag.*' => 'exists:task_tags,id',
-            'start_date' => 'nullable|date_format:'.config('app.date_format'),
-            'due_date' => 'nullable|date_format:'.config('app.date_format') . '|after_or_equal:start_date',
+            // 'start_date' => 'nullable|date_format:'.config('app.date_format'),
+            // 'due_date' => 'nullable|date_format:'.config('app.date_format') . '|after_or_equal:start_date',
             'attachment' => 'nullable|mimes:png,jpg,jpeg,gif',
         ];
         

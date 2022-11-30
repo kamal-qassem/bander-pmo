@@ -23,7 +23,7 @@ class StoreClientProjectsRequest extends FormRequest
     public function rules()
     {
         //config(['app.date_format' => env('DATE_FORMAT')]);
- config('app.date_format');
+//  config('app.date_format');
         $rules = [
             'title' => 'required',
             'client_id' => 'required',
@@ -31,8 +31,8 @@ class StoreClientProjectsRequest extends FormRequest
             /*'budget' => 'nullable|numeric|digits_between:1,20',*/
             'billing_type_id' => 'required',
             'assigned_to.*' => 'exists:contacts,id',
-            'start_date' => 'nullable|date_format:'.config('app.date_format'),
-            'due_date' => 'nullable|date_format:'.config('app.date_format'),
+            // 'start_date' => 'date_format:m/d/yyyy',
+            // 'due_date' => 'nullable|date_format:'.config('app.date_format'),
             'status_id' => 'required',
         ];
         if ( request()->billing_type_id == PROJECT_BILLING_TYPE_FIXED_PRICE ) {
