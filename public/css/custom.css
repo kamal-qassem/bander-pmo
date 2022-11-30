@@ -615,7 +615,14 @@ border-top: 2px solid #02a9f4;
 .nav > li > a {
     position: relative;
     display: block;
-    padding: 5px 8px;
+    padding: 8px;
+    width: 100px;
+    color: #000 !important;
+    background: #dad6ff !important;
+    margin: 5px;
+    margin-left: 10px !important;
+    text-align: center;
+    border-radius: 12px;
 }
 
 /*----------------admin/quote/ img-------------*/

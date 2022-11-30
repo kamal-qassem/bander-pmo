@@ -1,4 +1,4 @@
-<ul class="nav nav-tabs" role="tablist">
+<ul class="nav" role="tablist">
 <li role="presentation" class="active"><a href="#progress" aria-controls="progress" role="tab" data-toggle="tab">@lang('others.statistics.progress')</a></li>
 <li role="presentation" class=""><a href="#circle" aria-controls="circle" role="tab" data-toggle="tab">@lang('others.statistics.circle')</a></li>
 </ul>
