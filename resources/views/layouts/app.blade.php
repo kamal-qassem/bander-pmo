@@ -18,100 +18,86 @@ if (\Cookie::get('color_skin')) { // If user has his own skin we need get it.
     $color_theme = \Cookie::get('color_skin');
 }
 ?>
-<!DOCTYPE html>
-<html lang="{{$lang}}" dir="{{ $direction }}">
 
-<head>
-    @include('partials.head')
-</head>
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cuba admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Cuba admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="pixelstrap">
+    <link rel="icon" href="{{asset('assets/images/favicon.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('assets/images/favicon.png')}}" type="image/x-icon">
+    <title>Cuba - Premium Admin Template</title>
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
+    @include('layouts.simple.css')
+    @yield('style')
+  </head>
+  <body @if(Route::current()->getName() == 'index') onload="startTime()" @endif>
+    @if(Route::current()->getName() == 'index') 
+      <div class="loader-wrapper">
+        <div class="loader-index"><span></span></div>
+        <svg>
+          <defs></defs>
+          <filter id="goo">
+            <fegaussianblur in="SourceGraphic" stddeviation="11" result="blur"></fegaussianblur>
+            <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"> </fecolormatrix>
+          </filter>
+        </svg>
+      </div>
+     @endif
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends-->
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+      <!-- Page Header Start-->
+      @include('layouts.simple.header')
+      <!-- Page Header Ends  -->
+      <!-- Page Body Start-->
+      <div class="page-body-wrapper">
+        <!-- Page Sidebar Start-->
+         @include('layouts.simple.sidebar') 
 
-<body class="hold-transition {{$color_theme}} sidebar-mini" ng-app="academia">
-
-<span id="hdata"
-      data-df="{{ config('app.date_format_moment') }}"
-      data-curr="{{ getDefaultCurrency() }}" data-currency_id="{{getDefaultCurrency('id')}}"></span>
-
-<div id="wrapper">
-
-@if( empty( $topbar ) )
-    @include('partials.topbar')
-@elseif ( 'yes' === $topbar )
-    @include('partials.topbar')
-@endif
-
-<?php
-$style = '';
-$columns = 6;
-?>
-@if( empty( $sidebar ) )
-    @include('partials.sidebar')
-@elseif ( 'yes' === $sidebar )
-    @include('partials.sidebar')
-@else
-<?php $style = ' style="margin-left:0px;"'; ?>
-@endif
-
-<!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper" <?php echo $style; ?>>
-        <!-- Main content -->
-        <section class="content">
-            @if(isset($siteTitle))
-                <h3 class="page-title">
-                    {{ $siteTitle }}
-                </h3>
-            @endif
-
-            <div class="row">
-                <div class="col-md-12">
-                    <?php
-                    $parts = getController();
-                    if( env('APP_DEV') ) {
-                        echo $parts['controller'] . '@' . $parts['action'] . ' ' . date('d-m-Y H:i:s');
-                    }
-                    ?>
-                    {{ Breadcrumbs::render($parts['controller'] . '.' . $parts['action']) }}
-                    @if(env('DEMO_MODE'))
-                    <div class="alert alert-info demo-alert col-md-12">
-                    &nbsp;&nbsp;&nbsp;<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                        <strong>@lang('global.info')!</strong> CRUD @lang('global.operations_disabled')
-                    </div>
-                    @endif
-
-                    @if (Session::has('message'))
-                        <?php
-                        $message_type = getSetting('message_type', 'site_settings', 'onpage');
-                        if ( 'onpage' === $message_type ) {
-                        ?>
-                        <div class="alert alert-{{Session::get('status', 'info')}}">
-                            &nbsp;&nbsp;&nbsp;<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                            {{ Session::get('message') }}
-                        </div>
-                    <?php } ?>
-                    @endif
-                    @if ($errors->count() > 0 && ! in_array($parts['controller'], array( 'TicketsController', 'StatusesController', 'PrioritiesController', 'AgentsController', 'ConfigurationsController', 'CategoriesController', 'AdministratorsController' ) ))
-                        <div class="alert alert-danger">
-                            <ul class="list-unstyled">
-                                @foreach($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
-
-                    @yield('content')
-
+        <!-- Page Sidebar Ends-->
+        <div class="page-body">
+          <div class="container-fluid">        
+            <div class="page-title">
+              <div class="row">
+                <div class="col-6">
+                  @yield('breadcrumb-title')
                 </div>
+                <div class="col-6">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#"> <i data-feather="home"></i></a></li>
+                    @yield('breadcrumb-items')
+                  </ol>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+          <!-- Container-fluid starts-->
+          @yield('content')
+          <!-- Container-fluid Ends-->
+        </div>
+        <!-- footer start-->
+        @include('layouts.simple.footer') 
+        
+      </div>
     </div>
-</div>
+    <!-- latest jquery-->
+    @include('layouts.simple.script')  
+    <!-- Plugin used-->
 
-{!! Form::open(['route' => 'logout', 'style' => 'display:none;', 'id' => 'logout']) !!}
-<button type="submit">Logout</button>
-{!! Form::close() !!}
-
-@include('partials.javascripts')
-
-{!!getSetting('google_analytics', 'seo_settings')!!}
-</body>
+    <script type="text/javascript">
+      if ($(".page-wrapper").hasClass("horizontal-wrapper")) {
+            $(".according-menu.other" ).css( "display", "none" );
+            $(".sidebar-submenu" ).css( "display", "block" );
+      }
+    </script>
+  </body>
 </html>

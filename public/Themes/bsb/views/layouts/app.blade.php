@@ -83,14 +83,7 @@ $themecolor = strtolower( str_replace( ' ', '-', getActiveTheme('skin', 'red') )
         <div class="container-fluid">
             
 
-            @if(env('DEMO_MODE'))  
-            <div class="col-md-12">
-                <div class="alert alert-info demo-alert">
-                &nbsp;&nbsp;&nbsp;<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    <strong>@lang('global.info')!</strong> CRUD @lang('global.operations_disabled')
-                </div>
-            </div>
-            @endif
+           
 
             @if ($errors->count() > 0 && ! in_array($parts['controller'], array( 'TicketsController', 'StatusesController', 'PrioritiesController', 'AgentsController', 'ConfigurationsController', 'CategoriesController', 'AdministratorsController' ) ))
             <div class="col-md-12">

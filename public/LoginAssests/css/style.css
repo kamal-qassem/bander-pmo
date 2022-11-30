@@ -1,0 +1,286 @@
+body{
+    direction:rtl;
+    font-family: 'Poppins';  
+      color: #808080;
+      background-attachment: fixed;
+    }
+ 
+    @font-face {
+        font-family: 'Poppins';  
+        src: url('../fonts/Poppins.ttf');
+        src: local('☺'),  url('../fonts/Poppins.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+    @font-face {
+      font-family: 'DIN NEXT  ARABIC REGULAR';  
+      src: url('../fonts/DIN\ NEXT\ \ ARABIC\ REGULAR.otf');
+      src: local('☺'),  url('../fonts/DIN\ NEXT\ \ ARABIC\ REGULAR.otf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      }
+   .login-block{
+    background: url("../img/95a659d0-f9cd-4f35-a095-da85366150f7.jpg") no-repeat;
+    text-align: center;
+    font-family: 'Poppins'; 
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    opacity: 1;
+    filter: brightness(1.75);    height: auto; 
+    object-fit: contain;
+    color: #ffffff;
+    direction: ltr;
+
+    
+
+   }
+   .loginForm{
+    background-color: rgba(55, 139, 128, 0.66);
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Poppins';  
+    border: 2px solid #378B80; 
+
+  
+
+
+   }
+   .loginForm img{
+   height: 100px;
+   width: 100px;
+   background: white;
+   border: 2px solid #378B80;
+   border-radius: 12px;
+   }
+   .loginForm h2{
+    font-size: 22px;
+    font-weight: bold;
+   }
+   .loginForm .p1{
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+   }
+   
+   .loginForm label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+   }
+   .loginForm a{
+    font-size: 16px;
+    font-weight: 550;
+    color: #ffffff;
+    text-decoration: none;
+   }
+   .loginForm  p{
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffffff;
+   }
+
+   .loginForm a:hover{
+    font-weight: normal;
+    color: #CD9330;
+   }
+   .loginForm p a{
+    font-size: 20px;
+    font-weight: normal;
+    color: #CD9330;
+    text-decoration: none;
+   }
+  .loginForm  p button{
+    font-size: 20px;
+    font-weight: normal;
+    color: #CD9330;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+   }
+   .loginForm input{
+    background-color: #262A37;
+    border-radius: 10px;
+    color: #ffffff;
+    border: 1px solid #378B80; 
+
+   }
+   .loginForm .btn{
+    background-color: #378B80;
+    border-radius: 10px;
+    padding:5px 0 5px  0;
+    border:0px;
+
+   }
+    .resetSection{
+      margin-top: 20px; 
+      margin-bottom: 20px;      
+    }
+    .form-check input{
+        background-color: #f1f1f1;
+
+    }
+    .form-check-input:checked {
+        background-color: #399b8e;
+        border-color: #ffffff !important;
+    }
+
+      .form-control, .form-control:focus {
+        border: 1px solid #399b8e;
+        background-color: #f1f1f1;
+    }
+   .form-control{
+        padding: 0.5rem;
+        background-color: #f1eeea;
+        border: none;
+        border-bottom: 2px solid #343434;
+        border-radius: 0;
+        color: #343434;
+        transition: 0.4s;
+        box-shadow: none;
+        outline: 0px;
+    }    
+    /*Scroll*/
+::-webkit-scrollbar {
+    width: 10px;
+  
+    border-radius: 15px !important;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 15px !important;
+    
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #378B80;; 
+    border-radius: 15px !important;
+    height: 150px;
+    
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #399b8e; 
+    }
+
+    input::placeholder {
+        position: relative;
+        left: 10px;
+    }
+    
+
+    .hoverColor:hover{
+        color: #399b8e;
+        cursor: pointer;
+    }
+    .loginForm .btn:hover{
+      background-color: #378B80;
+      border: 0px;
+      outline: none;
+  
+     }
+     
+    /* hiding elements initially */
+    .hideBtn, .signIn, .passwordReset, .signUpBtn, .passwordResetBtn{
+        display: none;
+    }
+    
+    .overlay {
+      background: rgba(226, 216, 216, 0.1);
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .magictime.magic {
+      -webkit-animation-duration: 10s;
+      animation-duration: 10s;
+  }
+
+  /*home page css*/ 
+   
+  .navbar-dark .navbar-nav .nav-link{
+        text-transform: uppercase;
+        font-size: 18px;
+        padding:15px 25px;
+        color: #262A37;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover{
+        text-decoration: underline;
+    }
+
+    .navbar-brand img{
+      height: 120px;
+      width: 120px;
+    }
+    .bg-dark {
+      background-color: transparent!important;
+  }
+  .SliderSection{
+ 
+    width: 100%;
+    height: 500px;
+    position: relative;
+    text-align: left;
+    font-family: 'DIN NEXT  ARABIC REGULAR';  
+
+  }
+  .SliderSection .overlay{
+    background-color: rgba(248, 247, 216, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-item img{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 567px;
+
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 9rem !important;
+
+}
+.carousel-caption p{
+  margin-top: 2rem !important;
+  text-align: left;
+}
+.carousel-caption h1{
+  font-weight: bold;
+  font-size: 30px;
+}
+.carousel-caption p{
+  font-weight: bold;
+  font-size: 30px;
+}
+.carousel-caption button {
+ text-align: center;
+ justify-content: center;
+ display: flex;
+ margin: 0 auto;
+ background-color: rgba(14, 119, 104, 1);
+ border:none;
+ padding: 5px;
+ border-radius: 12px;
+ width: 230px;
+ height: 60px;
+}
+.carousel-caption button a{
+  text-align: center;
+  justify-content: center;
+  font-weight: 500;
+  color: white;
+  font-size: 20px;
+  
+}

@@ -719,7 +719,7 @@ When you add expense linked to project – the project currency is used (either 
   ),
   'client-projects' => 
   array (
-    'title' => 'Client projects',
+    'title' => 'projects',
     'ticket' => 'Ticket',
   'task_total_logged_time' => 'Task total logged time',
   'credit-note-from-project' => 'Credit note from project',

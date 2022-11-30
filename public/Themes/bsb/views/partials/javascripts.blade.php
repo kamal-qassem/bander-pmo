@@ -11,7 +11,7 @@
     window.are_you_sure = '{{ trans("custom.common.are-you-sure-delete") }}';
     window.please_select = '{{ trans("others.please-select-record") }}';
 </script>
-
+ 
 <!-- Jquery Core Js -->
 <script src="{{ themes('plugins/jquery/jquery.min.js') }}"></script>
 
@@ -38,7 +38,7 @@
 <script src="{{ themes('js/easypiechart.js') }}"></script>
 
 <!-- Demo Js -->
-<script src="{{ themes('js/demo.js') }}"></script>
+{{-- <script src="{{ themes('js/demo.js') }}"></script> --}}
 
 
 <script src="{{ themes('plugins/jquery-validation/jquery.validate.js') }}"></script>

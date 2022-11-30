@@ -582,7 +582,7 @@ return array (
   ),
   'client-projects' => 
   array (
-    'title' => 'مشاريع العملاء',
+    'title' => 'المشاريع ',
     'fields' => 
     array (
       'title' => 'عنوان',

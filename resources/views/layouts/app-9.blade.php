@@ -41,13 +41,13 @@ $color_theme = getSettingTheme('theme_color', $theme, 'skin-blue');
 $style = '';
 $columns = 6;
 ?>
-@if( empty( $sidebar ) )
+  @if( empty( $sidebar ) )
     @include('partials.sidebar')
 @elseif ( 'yes' === $sidebar )
     @include('partials.sidebar')
 @else
 <?php $style = ' style="margin-left:0px;"'; ?>
-@endif
+@endif  
 
 <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper" <?php echo $style; ?>>

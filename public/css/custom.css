@@ -144,6 +144,8 @@ td {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     border: 1px solid transparent;
+    padding-inline-start: 10px; 
+
 }
 
 .text-view {
