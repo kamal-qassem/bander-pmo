@@ -1,3 +1,4 @@
+<div class = "row">
 <div class="col-md-{{$widget->columns}}">
     <div class="media state-media box-ws bg-3">
         <div class="media-left">
@@ -11,6 +12,5 @@
             <a href="{{ route('admin.expenses.index') }}">@lang('custom.dashboard.total-expense')</a>
         </div>
     </div>
-    <br/>
 </div>
-
+</div>
