@@ -63,7 +63,7 @@
         $entry_date = ! empty( $expense->entry_date ) ? digiDate( $expense->entry_date ) : '';
     ?> 
     <div class="form-line">
-    {!! Form::text('entry_date', old('entry_date', $entry_date),['class' => 'form-control date', 'placeholder' => 'Entry date', 'required' => '']) !!}
+    {!! Form::date('entry_date', old('entry_date', $entry_date),['class' => 'form-control', 'placeholder' => 'Entry date', 'required' => '']) !!}
     <p class="help-block"></p>
     @if($errors->has('entry_date'))
         <p class="help-block">

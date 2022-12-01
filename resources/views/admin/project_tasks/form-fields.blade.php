@@ -29,7 +29,7 @@
         <?php
         $startdate = ! empty($project_task->startdate) ? digiDate( $project_task->startdate ) : '';
         ?>
-        {!! Form::text('startdate', old('startdate', $startdate), ['class' => 'form-control date', 'placeholder' => '', 'required' => '']) !!}
+        {!! Form::date('startdate', old('startdate', $startdate), ['class' => 'form-control', 'placeholder' => '', 'required' => '']) !!}
         <p class="help-block"></p>
         @if($errors->has('startdate'))
             <p class="help-block">
@@ -43,7 +43,7 @@
         <?php
         $duedate = ! empty($project_task->duedate) ? digiDate( $project_task->duedate ) : '';
         ?>
-        {!! Form::text('duedate', old('duedate', $duedate), ['class' => 'form-control date', 'placeholder' => '']) !!}
+        {!! Form::date('duedate', old('duedate', $duedate), ['class' => 'form-control', 'placeholder' => '']) !!}
         <p class="help-block"></p>
         @if($errors->has('duedate'))
             <p class="help-block">
@@ -57,7 +57,7 @@
         $datefinished = ! empty($project_task->datefinished) ? digiDate( $project_task->datefinished ) : '';
         ?>
         {!! Form::label('datefinished', trans('global.project-tasks.fields.datefinished').'', ['class' => 'control-label']) !!}
-        {!! Form::text('datefinished', old('datefinished',$datefinished), ['class' => 'form-control date', 'placeholder' => '']) !!}
+        {!! Form::date('datefinished', old('datefinished',$datefinished), ['class' => 'form-control', 'placeholder' => '']) !!}
         <p class="help-block"></p>
         @if($errors->has('datefinished'))
             <p class="help-block">

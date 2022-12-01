@@ -43,7 +43,7 @@
                         
                     {!! Form::label('date', trans('global.transfers.fields.date').'*', ['class' => 'control-label form-label']) !!}
                   <div class="form-line">
-                    {!! Form::text('date', old('date'), ['class' => 'form-control date', 'placeholder' => 'Date', 'required' => '']) !!}
+                    {!! Form::date('date', old('date'), ['class' => 'form-control', 'placeholder' => 'Date', 'required' => '']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('date'))
                         <p class="help-block">

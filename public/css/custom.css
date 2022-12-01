@@ -13,11 +13,12 @@ a.dt-button {
     border-color: #fff;
     box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.15);
 }
-  /* .panel-body{
+.panel  .panel-body{
    padding-right: 15px;
     padding-block-start: 15px;
+    padding-inline-start: 15px;
 
-}   */
+}   
 .slick-initialized .slick-slide {
     display: block;
     padding: 35px 15px;

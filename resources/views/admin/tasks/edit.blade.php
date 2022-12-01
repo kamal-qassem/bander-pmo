@@ -66,7 +66,7 @@
                         }
                         ?>
                     <div class="form-line">
-                    {!! Form::text('start_date', old('start_date',$start_date), ['class' => 'form-control date', 'placeholder' => 'Start Date']) !!}
+                    {!! Form::date('start_date', old('start_date',$start_date), ['class' => 'form-control', 'placeholder' => 'Start Date']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('start_date'))
                         <p class="help-block">
@@ -86,7 +86,7 @@
                         }
                         ?>
                     <div class="form-line">
-                    {!! Form::text('due_date', old('due_date',$due_date), ['class' => 'form-control date', 'placeholder' => 'Due Date']) !!}
+                    {!! Form::date('due_date', old('due_date',$due_date), ['class' => 'form-control', 'placeholder' => 'Due Date']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('due_date'))
                         <p class="help-block">

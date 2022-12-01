@@ -5458,6 +5458,8 @@ button.list-group-item-danger.active:focus {
 }
 .panel-body {
   padding: 15px;
+  padding-inline-start: 15px !important;
+  padding-block-start: 15px !important;
 }
 .panel-heading {
   padding: 10px 15px;

@@ -21,7 +21,7 @@
     <div class="form-group">
         {!! Form::label('start_date', trans('global.time-entries.fields.start-date').'*', ['class' => 'control-label form-label']) !!}
         <div class="form-line">
-        {!! Form::text('start_date', old('start_date'), ['class' => 'form-control datetime', 'placeholder' => '', 'required' => '']) !!}
+        {!! Form::date('start_date', old('start_date'), ['class' => 'form-controltime', 'placeholder' => '', 'required' => '']) !!}
         <p class="help-block"></p>
         @if($errors->has('start_date'))
             <p class="help-block">
@@ -36,7 +36,7 @@
     <div class="form-group">
         {!! Form::label('end_date', trans('global.time-entries.fields.end-date').'*', ['class' => 'control-label form-label']) !!}
      <div class="form-line">   
-        {!! Form::text('end_date', old('end_date'), ['class' => 'form-control datetime', 'placeholder' => '', 'required' => '']) !!}
+        {!! Form::date('end_date', old('end_date'), ['class' => 'form-controltime', 'placeholder' => '', 'required' => '']) !!}
         <p class="help-block"></p>
         @if($errors->has('end_date'))
             <p class="help-block">

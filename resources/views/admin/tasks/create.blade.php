@@ -61,7 +61,7 @@
                 <div class="form-group">
                     {!! Form::label('start_date', trans('global.tasks.fields.start-date').'', ['class' => 'control-label form-label']) !!}
                     <div class="form-line">
-                    {!! Form::text('start_date', old('start_date'), ['class' => 'form-control date', 'placeholder' => 'Start Date']) !!}
+                    {!! Form::date('start_date', old('start_date'), ['class' => 'form-control', 'placeholder' => 'Start Date']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('start_date'))
                         <p class="help-block">
@@ -76,7 +76,7 @@
                 <div class="form-group">
                     {!! Form::label('due_date', trans('global.tasks.fields.due-date').'', ['class' => 'control-label form-label']) !!}
                     <div class="form-line">
-                    {!! Form::text('due_date', old('due_date'), ['class' => 'form-control date', 'placeholder' => 'Due Date']) !!}
+                    {!! Form::date('due_date', old('due_date'), ['class' => 'form-control', 'placeholder' => 'Due Date']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('due_date'))
                         <p class="help-block">

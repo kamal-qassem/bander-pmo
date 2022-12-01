@@ -169,7 +169,7 @@
             <?php
             $order_date = ! empty($invoice->order_date) ? digiDate( $invoice->order_date ) : '';
             ?>
-            {!! Form::text('order_date', old('order_date', $order_date), ['class' => 'form-control date', 'placeholder' => '' ,'required'=>'']) !!}
+            {!! Form::date('order_date', old('order_date', $order_date), ['class' => 'form-control', 'placeholder' => '' ,'required'=>'']) !!}
             <p class="help-block"></p>
             @if($errors->has('order_date'))
             <p class="help-block">
@@ -186,7 +186,7 @@
             <?php
             $order_due_date = ! empty($invoice->order_due_date) ? digiDate( $invoice->order_due_date ) : '';
             ?>
-            {!! Form::text('order_due_date', old('order_due_date', $order_due_date), ['class' => 'form-control date', 'placeholder' => '']) !!}
+            {!! Form::date('order_due_date', old('order_due_date', $order_due_date), ['class' => 'form-control', 'placeholder' => '']) !!}
             <p class="help-block"></p>
             @if($errors->has('order_due_date'))
             <p class="help-block">

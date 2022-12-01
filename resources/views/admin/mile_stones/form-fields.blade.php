@@ -25,7 +25,7 @@
 
     <div class="col-xs-{{COLUMNS}}">
         {!! Form::label('due_date', trans('global.mile-stones.fields.due-date').'', ['class' => 'control-label']) !!}
-        {!! Form::text('due_date', old('due_date'), ['class' => 'form-control date', 'placeholder' => '','required'=>'']) !!}
+        {!! Form::date('due_date', old('due_date'), ['class' => 'form-control', 'placeholder' => '','required'=>'']) !!}
         <p class="help-block"></p>
         @if($errors->has('due_date'))
             <p class="help-block">

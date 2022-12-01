@@ -257,7 +257,7 @@
             <?php
             $invoice_date = ! empty($invoice->invoice_date) ? digiDate( $invoice->invoice_date ) : digiTodayDateAdd();
             ?>
-            {!! Form::text('invoice_date', old('invoice_date', $invoice_date), ['class' => 'form-control date', 'placeholder' => '']) !!}
+            {!! Form::date('invoice_date', old('invoice_date', $invoice_date), ['class' => 'form-control', 'placeholder' => '']) !!}
             <p class="help-block"></p>
             @if($errors->has('invoice_date'))
                 <p class="help-block">
@@ -277,7 +277,7 @@
            
             $invoice_due_date = ! empty($invoice->invoice_due_date) ? digiDate( $invoice->invoice_due_date ) : digiTodayDateAdd( $invoice_due_after );
             ?>
-            {!! Form::text('invoice_due_date', old('invoice_due_date', $invoice_due_date), ['class' => 'form-control date', 'placeholder' => '']) !!}
+            {!! Form::date('invoice_due_date', old('invoice_due_date', $invoice_due_date), ['class' => 'form-control', 'placeholder' => '']) !!}
             <p class="help-block"></p>
             @if($errors->has('invoice_due_date'))
                 <p class="help-block">

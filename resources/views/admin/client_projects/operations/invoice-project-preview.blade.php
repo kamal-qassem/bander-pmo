@@ -252,7 +252,7 @@ $operation = ! empty( $operation ) ? $operation : 'create';
                     <div class="form-group">
                     {!! Form::label('invoice_date', trans('global.invoices.fields.invoice-date').'', ['class' => 'control-label form-label']) !!}
                     <div class="form-line">
-                    {!! Form::text('invoice_date', old('invoice_date', digiTodayDateAdd()), ['class' => 'form-control date', 'placeholder' => '']) !!}
+                    {!! Form::date('invoice_date', old('invoice_date', digiTodayDateAdd()), ['class' => 'form-control', 'placeholder' => '']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('invoice_date'))
                         <p class="help-block">
@@ -273,7 +273,7 @@ $operation = ! empty( $operation ) ? $operation : 'create';
             ?>
 
                     <div class="form-line">
-                    {!! Form::text('invoice_due_date', old('invoice_due_date', $invoice_due_date ), ['class' => 'form-control date', 'placeholder' => '']) !!}
+                    {!! Form::date('invoice_due_date', old('invoice_due_date', $invoice_due_date ), ['class' => 'form-control', 'placeholder' => '']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('invoice_due_date'))
                         <p class="help-block">

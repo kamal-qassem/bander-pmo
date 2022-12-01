@@ -285,8 +285,8 @@
                     $start_date = digiDate($client_project->start_date);
                 }
                 ?>
-                {!! Form::text('start_date', old('start_date', $start_date), [
-                    'class' => 'form-control date',
+                {!! Form::date('start_date', old('start_date', $start_date), [
+                    'class' => 'form-control',
                     'placeholder' => 'Start Date',
                 ]) !!}
                 <p class="help-block"></p>
@@ -312,8 +312,8 @@
                     $due_date = digiDate($client_project->due_date);
                 }
                 ?>
-                {!! Form::text('due_date', old('due_date', $due_date), [
-                    'class' => 'form-control date',
+                {!! Form::date('due_date', old('due_date', $due_date), [
+                    'class' => 'form-control',
                     'placeholder' => 'Due Date',
                 ]) !!}
                 <p class="help-block"></p>

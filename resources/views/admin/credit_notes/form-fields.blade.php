@@ -203,7 +203,7 @@
         <?php
         $invoice_date = ! empty($invoice->invoice_date) ? digiDate( $invoice->invoice_date ) : digiTodayDateAdd();
         ?>
-        {!! Form::text('invoice_date', old('invoice_date', $invoice_date), ['class' => 'form-control date', 'placeholder' => '']) !!}
+        {!! Form::date('invoice_date', old('invoice_date', $invoice_date), ['class' => 'form-control', 'placeholder' => '']) !!}
         <p class="help-block"></p>
         @if($errors->has('invoice_date'))
             <p class="help-block">

@@ -75,7 +75,7 @@
                     <div class="form-group">                           
                     {!! Form::label('schedule_date', trans('custom.messages.date'), ['class' => 'control-label form-label']) !!}
                         <div class="form-line">
-                            {!! Form::text('schedule_date', old('schedule_date'), ['class' => 'form-control date', 'placeholder' => '']) !!}
+                            {!! Form::date('schedule_date', old('schedule_date'), ['class' => 'form-control', 'placeholder' => '']) !!}
                             <p class="help-block"></p>
                             @if($errors->has('schedule_date'))
                                 <p class="help-block">

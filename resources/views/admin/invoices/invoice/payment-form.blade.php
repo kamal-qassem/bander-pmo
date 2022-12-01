@@ -37,7 +37,7 @@
 <div class="form-group">
     <label for="date" class="col-sm-3 control-label">{{trans('custom.invoices.date') . '*'}}</label>
     <div class="col-sm-9">
-      <input type="text" class="form-control datepicker" value="{{digiTodayDate()}}" name="date" id="date">
+      <input type="date" class="form-control" value="{{digiTodayDate()}}" name="date" id="date">
     </div>
   </div>
 

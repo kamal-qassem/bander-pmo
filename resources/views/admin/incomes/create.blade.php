@@ -58,7 +58,7 @@
                     
                     {!! Form::label('entry_date', trans('global.income.fields.entry-date').'*', ['class' => 'control-label form-label']) !!}
                     <div class="form-line">
-                    {!! Form::text('entry_date', old('entry_date'), ['class' => 'form-control date', 'placeholder' => 'Entry date', 'required' => '']) !!}
+                    {!! Form::date('entry_date', old('entry_date'), ['class' => 'form-control', 'placeholder' => 'Entry date', 'required' => '']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('entry_date'))
                         <p class="help-block">
