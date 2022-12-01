@@ -105,7 +105,7 @@
     </div>
 
     <input type="hidden" name="list_name" value="{{! empty( $list_deails['name'] ) ? $list_deails['name'] : ''}}">
-    {!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-danger wave-effect']) !!}
+    {!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-primary wave-effect']) !!}
     {!! Form::close() !!}
 @stop
 

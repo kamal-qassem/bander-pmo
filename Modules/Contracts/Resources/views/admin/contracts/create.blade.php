@@ -346,7 +346,7 @@
         </div>
     </div>
 
-    {!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-danger wave-effect', 'name' => 'save']) !!}
+    {!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-primary wave-effect', 'name' => 'save']) !!}
     {!! Form::submit(trans('global.app_save_send'), ['class' => 'btn btn-success wave-effect', 'name' => 'savesend','value' => 'savesend']) !!}
     {!! Form::close() !!}
 

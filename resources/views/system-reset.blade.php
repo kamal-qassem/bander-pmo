@@ -65,7 +65,7 @@
                     </div>
                     
 
-                    {!! Form::submit(trans('global.app_reset'), ['class' => 'btn btn-danger wave-effect systemReset buttons', 'name' => 'reset']) !!}
+                    {!! Form::submit(trans('global.app_reset'), ['class' => 'btn btn-primary wave-effect systemReset buttons', 'name' => 'reset']) !!}
 
                     <a href="{{ route('admin.home.dashboard') }}" class="btn btn-warning buttons">@lang('global.cancel')</a>
                     {!! Form::close() !!}

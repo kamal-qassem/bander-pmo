@@ -39,7 +39,7 @@ if ( empty( $selectedid ) ) {
 }
 ?>
 <input type="hidden" name="selectedid" value="{{$selectedid}}">
-{!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-danger wave-effect', 'id' => 'saveCustomer']) !!}
+{!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-primary wave-effect', 'id' => 'saveCustomer']) !!}
 {!! Form::close() !!}
 
 <script type="text/javascript">

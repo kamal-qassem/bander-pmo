@@ -153,7 +153,7 @@
         </div>
         <div class="col-xs-12 form-group">
                
-                {!! Form::submit(trans('global.app_create'), ['class' => 'btn btn-danger wave-effect']) !!}
+                {!! Form::submit(trans('global.app_create'), ['class' => 'btn btn-primary wave-effect']) !!}
                 {!! Form::close() !!}  
                 </div>
     </div>

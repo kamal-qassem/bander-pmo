@@ -26681,7 +26681,7 @@ var render = function() {
                       _c(
                         "vue-button-spinner",
                         {
-                          staticClass: "btn btn-danger wave-effect",
+                          staticClass: "btn btn-primary wave-effect",
                           attrs: {
                             isLoading: _vm.loading,
                             disabled: _vm.loading
@@ -27094,7 +27094,7 @@ var render = function() {
                       _c(
                         "vue-button-spinner",
                         {
-                          staticClass: "btn btn-danger wave-effect",
+                          staticClass: "btn btn-primary wave-effect",
                           attrs: {
                             isLoading: _vm.loading,
                             disabled: _vm.loading
@@ -27528,7 +27528,7 @@ var render = function() {
                       _c(
                         "vue-button-spinner",
                         {
-                          staticClass: "btn btn-danger wave-effect",
+                          staticClass: "btn btn-primary wave-effect",
                           attrs: {
                             isLoading: _vm.loading,
                             disabled: _vm.loading
@@ -28219,7 +28219,7 @@ var render = function() {
                       _c(
                         "vue-button-spinner",
                         {
-                          staticClass: "btn btn-danger wave-effect",
+                          staticClass: "btn btn-primary wave-effect",
                           attrs: {
                             isLoading: _vm.loading,
                             disabled: _vm.loading
@@ -28349,7 +28349,7 @@ var render = function() {
                       _c(
                         "vue-button-spinner",
                         {
-                          staticClass: "btn btn-danger wave-effect",
+                          staticClass: "btn btn-primary wave-effect",
                           attrs: {
                             isLoading: _vm.loading,
                             disabled: _vm.loading
@@ -29232,7 +29232,7 @@ var render = function() {
                       _c(
                         "vue-button-spinner",
                         {
-                          staticClass: "btn btn-danger wave-effect",
+                          staticClass: "btn btn-primary wave-effect",
                           attrs: {
                             isLoading: _vm.loading,
                             disabled: _vm.loading

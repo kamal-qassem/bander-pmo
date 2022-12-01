@@ -22,7 +22,7 @@ if ( empty( $is_ajax ) ) {
 ?>
 <input type="hidden" name="is_ajax" value="{{$is_ajax}}">
 
-{!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-danger wave-effect saveButtonTax']) !!}
+{!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-primary wave-effect saveButtonTax']) !!}
 {!! Form::close() !!}
 
 @if( ! empty( $is_ajax ) && 'yes' === $is_ajax )

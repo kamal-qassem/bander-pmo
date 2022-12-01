@@ -130,7 +130,7 @@
 </div>
 
 <div style="margin-left: 15px;">
-{!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-danger wave-effect', 'id' => 'savePayment']) !!}
+{!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-primary wave-effect', 'id' => 'savePayment']) !!}
 {!! Form::close() !!}
 </div>
 

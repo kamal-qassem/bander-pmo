@@ -12,7 +12,7 @@
 
 </div>
   
-{!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-danger wave-effect']) !!}
+{!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-primary wave-effect']) !!}
 {!! Form::submit(trans('custom.common.save-manage'), ['class' => 'btn btn-info wave-effect', 'name' => 'btnsavemanage', 'value' => 'savemanage']) !!}  
 
 {!! Form::close() !!}

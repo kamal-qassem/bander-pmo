@@ -11,7 +11,7 @@
         
         <div class="panel-body">
             @include('admin.invoices.form-fields')
-    {!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-danger wave-effect']) !!}
+    {!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-primary wave-effect']) !!}
     {!! Form::submit(trans('custom.common.save-manage'), ['class' => 'btn btn-info wave-effect', 'name' => 'btnsavemanage', 'value' => 'savemanage']) !!}
     {!! Form::submit(trans('custom.common.save-send'), ['class' => 'btn btn-success wave-effect', 'name' => 'btnsavesend', 'value' => 'savesend']) !!}
         </div>

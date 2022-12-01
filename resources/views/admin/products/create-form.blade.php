@@ -21,7 +21,7 @@ if( empty( $row_id ) ) {
 ?>
 <input type="hidden" name="row_id" value="{{$row_id}}">
 @endif
-{!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-danger wave-effect saveButton']) !!}
+{!! Form::submit(trans('global.app_save'), ['class' => 'btn btn-primary wave-effect saveButton']) !!}
 {!! Form::close() !!}
 
 @if( ! empty( $is_ajax ) && 'yes' === $is_ajax )

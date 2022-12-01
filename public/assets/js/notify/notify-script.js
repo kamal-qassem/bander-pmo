@@ -12,7 +12,7 @@ var BootstrapNotifyDemo = function () {
                 content.icon = 'icon ' + $('#bootstrap-notify-icon').val();
             }
             if ($('#bootstrap-notify-url').prop('checked')) {
-                content.url = 'http://pixelstrap.com';
+                content.url = '';
                 content.target = '_blank';
             }
             var notify = $.notify(content, { 

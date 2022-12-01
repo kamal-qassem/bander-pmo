@@ -15,7 +15,7 @@
         </div>
     </div>
 
-    {!! Form::submit(trans('global.app_update'), ['class' => 'btn btn-danger wave-effect']) !!}
+    {!! Form::submit(trans('global.app_update'), ['class' => 'btn btn-primary wave-effect']) !!}
     {!! Form::close() !!}
 
     @include('admin.common.modal-loading-submit')
