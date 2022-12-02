@@ -387,33 +387,6 @@
             @endif
         </div>
     </div>
-
-
-    <div class="col-xs-6">
-        <div class="form-group">
-            {!! Form::label('project_tabs', trans('global.client-projects.fields.project-tabs') . '', [
-                'class' => 'control-label',
-            ]) !!}
-            <button type="button" class="btn btn-primary btn-xs" id="selectbtn-project_tabs">
-                {{ trans('global.app_select_all') }}
-            </button>
-            <button type="button" class="btn btn-primary btn-xs" id="deselectbtn-project_tabs">
-                {{ trans('global.app_deselect_all') }}
-            </button>
-            {!! Form::select('project_tabs[]', $project_tabs, old('project_tabs'), [
-                'class' => 'form-control select2',
-                'multiple' => 'multiple',
-                'id' => 'selectall-project_tabs',
-            ]) !!}
-            <p class="help-block"></p>
-            @if ($errors->has('project_tabs'))
-                <p class="help-block">
-                    {{ $errors->first('project_tabs') }}
-                </p>
-            @endif
-        </div>
-    </div>
-
 </div>
 <div class="row">
     <div class="col-xs-12">

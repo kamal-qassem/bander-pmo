@@ -54,16 +54,7 @@
         });
     </script>
 
-    <script>
-        $("#selectbtn-project_tabs").click(function(){
-            $("#selectall-project_tabs > option").prop("selected","selected");
-            $("#selectall-project_tabs").trigger("change");
-        });
-        $("#deselectbtn-project_tabs").click(function(){
-            $("#selectall-project_tabs > option").prop("selected","");
-            $("#selectall-project_tabs").trigger("change");
-        });
-    </script>
+     
 
     <script type="text/javascript">
         $("#billing_type_id").change(function(){

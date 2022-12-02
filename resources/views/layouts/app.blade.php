@@ -44,6 +44,12 @@ if (\Cookie::get('color_skin')) { // If user has his own skin we need get it.
     @yield('style')
   </head>
   <body @if(Route::current()->getName() == 'index') onload="startTime()" @endif>
+
+{!! Form::open(['route' => 'logout', 'style' => 'display:none;', 'id' => 'logout']) !!}
+<button id="logout"  style="display:none" type="submit">Logout</button>
+{!! Form::close() !!}
+        
+ 
     @if(Route::current()->getName() == 'index') 
       <div class="loader-wrapper">
         <div class="loader-index"><span></span></div>

@@ -16,7 +16,7 @@ if ( 'progress' === $statistics_type ) {
                         $total_amount_client_projects = App\ClientProject::sum('budget');
                         ?>
                         <h3 class="text-muted _total">
-                            {{ digiCurrency($total_amount_client_projects) }}00000
+                            {{ digiCurrency($total_amount_client_projects) }} 
                         </h3>
                         <span class="text-info">
                             @lang('others.statistics.total-client-projects')

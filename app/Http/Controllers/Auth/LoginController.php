@@ -145,11 +145,7 @@ class LoginController extends Controller
     public function logout(Request $request)
     {
         Auth::logout();
-        if ( isDemo() ) {
-            return redirect()->route('direct.login');
-        } else {
-            return redirect('login');
-        }
+        return redirect('login');
     }
 
     public function directLogin( MessageBag $message_bag, $id = '' )

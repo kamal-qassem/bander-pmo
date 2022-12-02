@@ -54,11 +54,12 @@
                 <?php
                 $user = Auth::user();
                 $name = $user->name;
+                $email = $user->email
                 $image = '';
                 if ($user->thumbnail && file_exists(public_path().'/thumb/' . $user->thumbnail)) {
                     $image = asset(env('UPLOAD_PATH').'/thumb/'.$user->thumbnail);
                 }
-                ?>
+                ?>  
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                       @if ( ! empty( $image ) )
@@ -78,7 +79,7 @@
                             @if( ! empty( Auth::user()->last_login_from ) ) <br> @lang('custom.topbar.login-from'){{ Auth::user()->last_login_from }} @endif</small>
                         </p>
                       </li>
-
+ 
                       <!-- Menu Footer-->
                       <li class="user-footer">
                         <div class="pull-left">
