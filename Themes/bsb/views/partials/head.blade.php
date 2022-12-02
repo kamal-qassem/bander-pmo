@@ -8,8 +8,9 @@ if (\Cookie::get('direction')) {
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 <title>{{getSetting('site_title', 'site_settings', trans('global.global_title'))}}</title>
+
 <!-- Favicon-->
-<link rel="icon" href="{{IMAGE_PATH_SETTINGS.getSetting('site_favicon', 'site_settings')}}" type="image/x-icon" />
+<link rel="icon"  href="{{IMAGE_PATH_SETTINGS.getSetting('site_favicon', 'site_settings')}}" type="image/x-icon" />
 <meta name="description" content="{{getSetting('meta_description', 'seo_settings')}}">
 <meta name="keywords" content="{{getSetting('meta_keywords', 'seo_settings')}}">
 <!-- Google Fonts -->
