@@ -238,6 +238,7 @@ class ClientProjectsController extends Controller
      */
     public function create()
     {
+     
         if (! Gate::allows('client_project_create')) {
             return prepareBlockUserMessage();
         }
@@ -246,17 +247,14 @@ class ClientProjectsController extends Controller
             function ($query) {
                 $query->where('id', CONTACT_CLIENT_TYPE);
             })->get()->pluck('name', 'id')->prepend(trans('global.app_please_select'), '');
-
+           
         $billing_types = \App\ProjectBillingType::get()->pluck('title', 'id')->prepend(trans('global.app_please_select'), '');
-       
-
-
-
+      
         $assigned_tos = \App\User::whereHas("role",
             function ($query) {
                 $query->where('title', ROLE_EMPLOYEE);
             })->get()->pluck('name', 'id');
-
+            
         $project_tabs = \App\ProjectTab::get()->pluck('title', 'id');
 
         $statuses = \App\ProjectStatus::get()->pluck('name', 'id')->prepend(trans('global.app_please_select'), '');
@@ -272,12 +270,15 @@ class ClientProjectsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(StoreClientProjectsRequest $request)
-    {
+    {      
+     
+      
         if (! Gate::allows('client_project_create')) {
             return prepareBlockUserMessage();
         }
 
         $date_set = getCurrentDateFormat();
+        error_log('Some message here.');
 
         $currency_id = getDefaultCurrency('id');
         if ( ! empty( $request->client_id ) ) {
@@ -293,12 +294,14 @@ class ClientProjectsController extends Controller
          return prepareBlockUserMessage( 'info', 'crud_disabled' );
         }
         $client_project = ClientProject::create($request->all());
+        dd($client_project);
         $client_project->assigned_to()->sync(array_filter((array)$request->input('assigned_to')));
         $client_project->project_tabs()->sync(array_filter((array)$request->input('project_tabs')));
 
 
-        flashMessage( 'success', 'create' );
-        return redirect()->route('admin.client_projects.index');
+       flashMessage( 'success', 'create' ); 
+       return $client_project;
+        // return redirect()->route('admin.client_projects.index');
     }
 
 

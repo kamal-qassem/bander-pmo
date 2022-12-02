@@ -14,9 +14,11 @@ if ( ! empty( $color_theme ) && substr($color_theme, -3) === 'css' ) {
 </title>
 
 <!-- Favicon-->
-<link rel="icon" href="{{IMAGE_PATH_SETTINGS.getSetting('site_favicon', 'site_settings')}}" type="image/x-icon" />
 <meta name="description" content="{{getSetting('meta_description', 'seo_settings')}}">
 <meta name="keywords" content="{{getSetting('meta_keywords', 'seo_settings')}}">
+
+<link rel="icon" href="{{IMAGE_PATH_SETTINGS.getSetting('site_favicon', 'site_settings')}}" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="{{ url('adminlte/Default-login/vendor/bootstrap/css/bootstrap.min.css') }}">
 
 
 <!-- Tell the browser to be responsive to screen width -->

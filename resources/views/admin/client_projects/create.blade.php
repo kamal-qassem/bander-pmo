@@ -10,7 +10,7 @@
         </div>
         
         <div class="panel-body">
-            @include('admin.client_projects.form-fields')
+             @include('admin.client_projects.form-fields')  
         </div>
     </div>
 
@@ -18,7 +18,7 @@
     {!! Form::close() !!}
 
     @include('admin.common.modal-loading-submit')
-@stop
+@endsection
 
 @section('javascript')
     @parent
@@ -72,4 +72,4 @@
     </script>
 
     @include('admin.common.modal-scripts')
-@stop
+@endsection

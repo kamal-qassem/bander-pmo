@@ -4,7 +4,6 @@
             {!! Form::label('title', trans('global.client-projects.fields.title') . '*', [
                 'class' => 'control-label form-label',
             ]) !!}
-
             <div class="form-line">
                 {!! Form::text('title', old('title'), ['class' => 'form-control', 'placeholder' => 'Title', 'required' => '']) !!}
                 <p class="help-block"></p>
